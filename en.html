@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Cash Flow Android app: local financial data storage, backups, and control over your data.">
+  <title>Privacy Policy — Cash Flow</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; }
+    body { margin: 0; background: #f5f7fa; color: #192331; }
+    main { max-width: 820px; margin: 32px auto; padding: 32px; background: #fff; border-radius: 16px; }
+    h1 { line-height: 1.2; font-size: clamp(1.7rem, 5vw, 2.3rem); }
+    h2 { margin-top: 2rem; font-size: 1.25rem; line-height: 1.4; }
+    a { color: #1858b4; overflow-wrap: anywhere; }
+    .meta { color: #526174; }
+    li { margin-block: .5rem; }
+    @media (max-width: 600px) { main { margin: 0; padding: 24px 18px; border-radius: 0; } }
+    @media (prefers-color-scheme: dark) { body { background: #111820; color: #e5ebf2; } main { background: #192330; } a { color: #9ac3ff; } .meta { color: #b6c3d2; } }
+    @media print { body, main { background: white; color: black; } main { margin: 0; padding: 0; } a, .meta { color: black; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Policy language"><a href="index.html" lang="ru" hreflang="ru">Русский</a> · <strong lang="en" aria-current="page">English</strong></nav>
+  <header>
+    <h1>Cash Flow Privacy Policy</h1>
+    <p class="meta">Last updated: <time datetime="2026-10-13">October 13, 2026</time></p>
+    <p>This policy describes how data is processed in the Cash Flow Android app. The app developer is Anatoliy Starikov. For privacy inquiries, contact <a href="mailto:stark.white.wolf.game@gmail.com">stark.white.wolf.game@gmail.com</a>.</p>
+  </header>
+
+  <section aria-labelledby="local">
+    <h2 id="local">1. Data used by the app</h2>
+    <p>Cash Flow is designed for personal finance tracking. The app processes data you enter or import: accounts and their names, currencies, balances, income, expenses, transfers, dates, categories, notes, tags, budgets, goals, recurring payments, and deposit settings. If you add attachments, the app stores the selected files and their association with transactions.</p>
+    <p>Your device also stores language, theme, notification, and lock settings, initial setup status, and technical data needed for the app to work, such as cached exchange rates and the last opening time used for reminders.</p>
+    <p>This data is used to maintain your records, calculate balances and reports, process configured recurring transactions, provide notifications, export data, and restore backups. No separate Cash Flow registration or user account is required. The app does not connect to your bank accounts or request banking passwords or payment card details.</p>
+  </section>
+
+  <section aria-labelledby="storage">
+    <h2 id="storage">2. Local storage and protection</h2>
+    <p>Your main financial data is stored in an encrypted database in the app’s private storage on your device. The key is protected using Android Keystore. Cash Flow has no server of its own for storing your financial data, and the developer does not have remote access to your database.</p>
+    <p>If you enable the app lock, the app stores a protected representation of your PIN to verify access. When you use biometrics, Android performs the verification: Cash Flow receives the verification result, not fingerprint or facial images. Your PIN and biometric data are not sent to the developer.</p>
+    <p>Automatic backup of app data through Android is disabled. Data protection also depends on your device’s security, access to exported files, and keeping your recovery passphrase safe.</p>
+  </section>
+
+  <section aria-labelledby="network">
+    <h2 id="network">3. Network requests and third-party services</h2>
+    <p><strong>Exchange rates.</strong> The app contacts <a href="https://frankfurter.dev/">Frankfurter</a> over HTTPS to retrieve exchange rates. The request includes the base currency code. Your amounts, transactions, account names, and notes are not sent to the service. A network connection makes your IP address and HTTP request parameters technically available to the service. Its own rules govern how it processes that information.</p>
+    <p><strong>Google Drive.</strong> Backup and restore through Drive take place only when you initiate them and authorize access to your selected Google account. The app uses the limited <code>drive.file</code> scope to work with backup files it creates. Google receives the necessary authorization requests and file operations; the app uses an access token to perform them and does not receive your Google account password.</p>
+    <p>Before being uploaded to Drive, your financial data is encrypted on your device using the recovery passphrase you enter. Drive receives the encrypted file and its metadata, including its name, size, and creation time. Backups are stored in the <code>Cash Flow backups</code> folder. The recovery passphrase is not saved in settings or sent to Google or the developer. Attachment files are not included in the backup. Google’s processing of data is governed by the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
+    <p><strong>External apps.</strong> If you open the Cash Flow listing in Google Play or share an exported file through the system menu, the selected service or app processes the information it receives under its own rules. Opening the Google Play listing does not send your financial records.</p>
+  </section>
+
+  <section aria-labelledby="exports">
+    <h2 id="exports">4. Exports and backups</h2>
+    <p>You initiate exports and imports. A local JSON backup is encrypted with the key of the current installation and is intended for restoration within that installation. A portable Google Drive backup is encrypted with a separate recovery passphrase and can be used after reinstalling the app or on another device.</p>
+    <p>A CSV export contains financial records in readable form and is not protected by backup encryption. You choose where to save the file and who receives it. Once a file is shared with another app or person, Cash Flow cannot control how that copy is subsequently used.</p>
+  </section>
+
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">5. Permissions and notifications</h2>
+    <ul>
+      <li>Internet access is used to retrieve exchange rates and carry out Google Drive actions you choose.</li>
+      <li>Notification permission is used for app reminders and notifications. You can disable it in Android settings.</li>
+      <li>Android system tools are used to select, save, and share files. You choose the files and recipients.</li>
+      <li>Biometric verification is used if you enable this access method and your device supports it.</li>
+    </ul>
+    <p>The current version does not request access to contacts, location, SMS, or the microphone. Information shown in widgets or notifications may be visible to people who can see your device’s screen; you can manage its display through Android.</p>
+  </section>
+
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">6. Advertising, analytics, and data sharing</h2>
+    <p>The current version has no advertising SDKs, third-party behavioral analytics systems, or automatic crash reporting to the developer. Financial data is not sold or shared with advertisers. Reports within Cash Flow are calculated locally.</p>
+    <p>Transfers outside your device include the network requests described above, backups and exports you initiate, and, once purchases are enabled, the Google Play interactions described in section 9. If you email the developer, they receive your email address, message, and any files you attach. This information is used to respond to and resolve your inquiry; do not send your PIN, passwords, keys, or recovery passphrase.</p>
+  </section>
+
+  <section aria-labelledby="deletion">
+    <h2 id="deletion">7. Retention and deletion</h2>
+    <p>Local data is retained while you use the app until you delete it. Archiving a record does not permanently delete it. To delete all data from the current installation, clear Cash Flow’s storage in Android settings or uninstall the app. The developer cannot remotely restore or delete your local database.</p>
+    <p>Exported files and Google Drive backups remain independently of the app’s removal. Delete them separately from the chosen storage location and, if necessary, its trash. You can revoke Cash Flow’s access to Google in your Google account settings; revoking access does not itself delete previously created backups. Information held by third-party services is retained under their own rules.</p>
+    <p>Support correspondence is retained while the inquiry is being resolved and for related follow-up work. You can request its deletion by emailing the contact address; some information may need to be retained where required by applicable law.</p>
+  </section>
+
+  <section aria-labelledby="choices">
+    <h2 id="choices">8. Your control over data</h2>
+    <p>You can view and edit your records, export them, manage notifications and the app lock, choose not to use Google Drive, and delete data using the methods described above. To ask about access to, correction of, or deletion of information you provided directly to the developer, contact them by email. Your rights under applicable personal data protection laws remain available.</p>
+  </section>
+
+  <section aria-labelledby="purchases">
+    <h2 id="purchases">9. Purchasing Pro through Google Play</h2>
+    <p><strong>This section has been prepared for the future introduction of purchases.</strong> Purchasing and restoring purchases through Google Play are not yet available in the current implementation. The processing described below applies once this feature is enabled in the app.</p>
+    <p>Pro is planned as a one-time purchase through Google Play Billing, with no subscription or automatic recurring charges. You initiate payment; Google Play displays the price and terms before confirmation.</p>
+    <p>Google Play processes the payment using your Google account and chosen payment method. Cash Flow does not receive your payment card number, card security code, or Google account password. Payment and account-related data are processed under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
+    <p>To provide and restore Pro access, the app will receive purchase information from Google Play: the product ID, purchase state, purchase token, and other available technical details, such as the purchase time and order ID. These are used to verify entitlement to Pro, acknowledge the purchase, and restore access. Purchases are handled through Google Play; under the planned architecture, the developer does not use a server of their own to verify purchases. Pro access status is stored locally. Your accounts, amounts, transactions, notes, PIN, and backups are not sent to Google Play to complete a purchase.</p>
+    <p>If you ask for help with payment or a refund, the developer may receive the order ID you provide and information available to them in Google Play’s order management tools. This information is used to address your inquiry and manage the relevant purchase, not for advertising.</p>
+    <p>When restoring access, the app will request available purchases from Google Play for the account in use. Clearing app data or uninstalling Cash Flow removes the local Pro status but does not delete the order history in Google Play or itself cancel the purchase or initiate a refund. Google retains payment records under its rules and applicable legal requirements. For purchase or refund questions, you can contact Google Play or the developer at the contact address.</p>
+  </section>
+
+  <section aria-labelledby="updates">
+    <h2 id="updates">10. Policy changes and contact details</h2>
+    <p>This policy may be updated when app features or data processing change. The date of the current version appears at the top of this page. New methods of transferring data that require separate permission will be accompanied by an appropriate request in the app.</p>
+    <p>Developer: <strong>Anatoliy Starikov</strong>.<br>For privacy questions and data inquiries: <a href="mailto:stark.white.wolf.game@gmail.com">stark.white.wolf.game@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
