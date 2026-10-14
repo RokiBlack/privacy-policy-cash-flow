@@ -24,7 +24,7 @@
   <nav aria-label="Policy language"><a href="index.html" lang="ru" hreflang="ru">Русский</a> · <strong lang="en" aria-current="page">English</strong></nav>
   <header>
     <h1>Cash Flow Privacy Policy</h1>
-    <p class="meta">Last updated: <time datetime="2026-10-13">October 13, 2026</time></p>
+    <p class="meta">Last updated: <time datetime="2026-10-14">October 14, 2026</time></p>
     <p>This policy describes how data is processed in the Cash Flow Android app. The app developer is Anatoliy Starikov. For privacy inquiries, contact <a href="mailto:stark.white.wolf.game@gmail.com">stark.white.wolf.game@gmail.com</a>.</p>
   </header>
 
@@ -70,7 +70,7 @@
   <section aria-labelledby="sharing">
     <h2 id="sharing">6. Advertising, analytics, and data sharing</h2>
     <p>The current version has no advertising SDKs, third-party behavioral analytics systems, or automatic crash reporting to the developer. Financial data is not sold or shared with advertisers. Reports within Cash Flow are calculated locally.</p>
-    <p>Transfers outside your device include the network requests described above, backups and exports you initiate, and, once purchases are enabled, the Google Play interactions described in section 9. If you email the developer, they receive your email address, message, and any files you attach. This information is used to respond to and resolve your inquiry; do not send your PIN, passwords, keys, or recovery passphrase.</p>
+    <p>Transfers outside your device include the network requests described above, backups and exports you initiate, and, in versions supporting purchases, the Google Play interactions described in section 9. If you email the developer, they receive your email address, message, and any files you attach. This information is used to respond to and resolve your inquiry; do not send your PIN, passwords, keys, or recovery passphrase.</p>
   </section>
 
   <section aria-labelledby="deletion">
@@ -87,12 +87,13 @@
 
   <section aria-labelledby="purchases">
     <h2 id="purchases">9. Purchasing Pro through Google Play</h2>
-    <p><strong>This section has been prepared for the future introduction of purchases.</strong> Purchasing and restoring purchases through Google Play are not yet available in the current implementation. The processing described below applies once this feature is enabled in the app.</p>
-    <p>Pro is planned as a one-time purchase through Google Play Billing, with no subscription or automatic recurring charges. You initiate payment; Google Play displays the price and terms before confirmation.</p>
+    <p>When the app starts, resumes, or you request restoration, Cash Flow automatically contacts Google Play to check available purchases and Pro status. These checks do not create new purchases or charge you. Technical interactions between Google Play, its billing library, and Google services are governed by Google’s policies.</p>
+    <p>This section applies to versions of Cash Flow that support purchasing Pro through Google Play. Purchase availability depends on Google Play, your region, and the product settings.</p>
+    <p>Pro is offered as a one-time purchase through Google Play Billing, with no subscription or automatic recurring charges. You initiate payment; Google Play displays the price and terms before confirmation.</p>
     <p>Google Play processes the payment using your Google account and chosen payment method. Cash Flow does not receive your payment card number, card security code, or Google account password. Payment and account-related data are processed under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
-    <p>To provide and restore Pro access, the app will receive purchase information from Google Play: the product ID, purchase state, purchase token, and other available technical details, such as the purchase time and order ID. These are used to verify entitlement to Pro, acknowledge the purchase, and restore access. Purchases are handled through Google Play; under the planned architecture, the developer does not use a server of their own to verify purchases. Pro access status is stored locally. Your accounts, amounts, transactions, notes, PIN, and backups are not sent to Google Play to complete a purchase.</p>
+    <p>To provide and restore Pro access, the app receives purchase information from Google Play: the product ID, purchase state, purchase token, and other available technical details, such as the purchase time and order ID. These are used to verify entitlement to Pro, acknowledge the purchase, and restore access. Purchases are handled through Google Play; under the planned architecture, the developer does not use a server of their own to verify purchases. Pro access status is stored locally. Your accounts, amounts, transactions, notes, PIN, and backups are not sent to Google Play to complete a purchase.</p>
     <p>If you ask for help with payment or a refund, the developer may receive the order ID you provide and information available to them in Google Play’s order management tools. This information is used to address your inquiry and manage the relevant purchase, not for advertising.</p>
-    <p>When restoring access, the app will request available purchases from Google Play for the account in use. Clearing app data or uninstalling Cash Flow removes the local Pro status but does not delete the order history in Google Play or itself cancel the purchase or initiate a refund. Google retains payment records under its rules and applicable legal requirements. For purchase or refund questions, you can contact Google Play or the developer at the contact address.</p>
+    <p>When restoring access, the app requests available purchases from Google Play for the account in use. Clearing app data or uninstalling Cash Flow removes the local Pro status but does not delete the order history in Google Play or itself cancel the purchase or initiate a refund. Google retains payment records under its rules and applicable legal requirements. For purchase or refund questions, you can contact Google Play or the developer at the contact address.</p>
   </section>
 
   <section aria-labelledby="updates">
